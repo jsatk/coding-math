@@ -11,7 +11,7 @@ window.onload = function () {
   context.scale(1, -1);             // Flips the Y axis to follow traditional Cartesian coordinates system
 
   for (var angle = 0; angle < twoPi; angle += 0.01) {
-    const x = angle * space;
+    const x    = angle * space;
     const siny = Math.sin(angle) * space;
 
     context.fillRect(x, siny, size, size);
